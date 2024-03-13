@@ -17,22 +17,29 @@
 
 ## CONSOLE
 
-<code>cd FOLDER_PATH // путь до вашей папки
+<code>
+cd FOLDER_PATH // путь до вашей папки
 dotnet new webapi // создание шаблона WebApi
 dotnet new sln // создание решения
 </code>
 
 <p>После этого в решении (VS/Rider) нужно будет прикрутить проект WebApi к решению. Как это сделать показано ниже: </p>
 
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/screen_add_project.png"/>
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/screen_add_project_2.png"/>
 
 ## Visual Studio
 
 <p>Создаём новый проект WebApi, ждём, радуемся!</p>
 
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/screen_create_project.png"/>
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/screen_create_project_2.png"/>
 
 # Смотрим то, что имеем
 
 <p>Перед нашими глазами шаблон самой простой апишки, давайте разберёмся, что тут вообще есть: </p>
+
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/screen_arh.png"/>
 
 <li>Properties - настройки проекта</li>
 <li>Controllers - контроллеры, на которые отправляются запросы, в них выполняются все методы, которые мы напишем.</li>
@@ -54,6 +61,8 @@ dotnet new sln // создание решения
 # А дальше что
 
 <p>Хорошо, для начала избавимся от всего мусора и удалим ненужные контроллеры и файлы, в сухом остатке должно быть так: </p>
+
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/screen_clear.png"/>
 
 <p>Теперь определимся с идеей приложения.. Магазин книг!</p>
 
@@ -93,6 +102,8 @@ Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</h2>
 
 > Data, Entities, Services, DTOS
 
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/screen_add_folder.png"/>
+
 ## Придумываем таблички!
 
 <p>Сделаем простенькую БД, без лишних заморочек. В книжном должны быть:</p>
@@ -103,7 +114,7 @@ Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</h2>
 <p>Создаём в папке Entities два файла: Author, Book</p>
 
 <h1>Author</h1>
-<h2>namespace ApiTutorial.WebApi.Entities
+<code>namespace ApiTutorial.WebApi.Entities
 {
     public class Author
     {
@@ -112,10 +123,12 @@ Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</h2>
         public string? Lastname { get; set; } // Фамилия
         public string? Surname { get; set; } // Отчество
     }
-}</h2>
+}
+</code>
 
 <h1>Book</h1>
-<h2>using System.Text.Json.Serialization;
+<code>
+using System.Text.Json.Serialization;
 
 namespace ApiTutorial.WebApi.Entities
 {
@@ -129,14 +142,15 @@ namespace ApiTutorial.WebApi.Entities
         public Author? Author { get; set; }
     }
 }
-</h2>
+</code>
 
 <h1>ЧУДЕСНО!</h1>
 
 <p>В папке Data создаём файл ApplicationDbContext. В нём мы наследуемся от DbContext и объявляем наши Сущности</p>
 <p>После объявления сущностей раскрываем конструктор, в который передаём настройки контекста и наследуемся от базового класса</p>
 <p>В конечном итоге файл должен выглядеть так:</p>
-<h2>using ApiTutorial.WebApi.Entities;
+<code>
+ using ApiTutorial.WebApi.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiTutorial.WebApi.Data
@@ -148,7 +162,7 @@ namespace ApiTutorial.WebApi.Data
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { } //
     }
-}</h2>
+}</code>
 
 не забывай дышать
 
@@ -164,20 +178,24 @@ namespace ApiTutorial.WebApi.Data
 <p>Чудесно, осталось только сделать миграцию и любоваться нашей БД!</p>
 <p>Открываем диспетчер пакетов и пишем:</p>
 
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/nuget_disp.png"/>
 
-
-<h2>add-migration
+<code>
+add-migration
 MIGRATION_NAME
-update-database</h2>
+update-database</code
 
 <p>Заходим в средство просмотра и любуемся.. Всё получилось? Великолепно!</p>
+
+<img src="https://github.com/exexeeeex/api-tutorial/blob/main/screenshots/database.png"/>
 
 # Пишем первый метод!
 
 <p>Давайте напишем простенький метод, который будет принимать книгу и её автора, а поссле добавлять это всё в нашу базу данных</p>
 
 <p>В папке DTOS создаём файл BookDTO</p>
-<h2>namespace ApiTutorial.WebApi.DTOS
+<code>
+ namespace ApiTutorial.WebApi.DTOS
 {
     public class BookDTO
     {
@@ -186,10 +204,12 @@ update-database</h2>
         public string? AuthorSurname { get; set; } // Отчество автора
         public string? BookName { get; set; } // Название книги
     }
-}</h2>
+}
+</code>
 
 <p>В папке Services создаём файл BookService, в котором раскрываем конструктор и передаём в него наш контекст базы данных</p>
-<h2>using ApiTutorial.WebApi.Data;
+<code>
+ using ApiTutorial.WebApi.Data;
 
 namespace ApiTutorial.WebApi.Services
 {
@@ -198,10 +218,11 @@ namespace ApiTutorial.WebApi.Services
         private readonly ApplicationDbContext _context = context;
     }
 }
-</h2>
+</code>
 
 <p>Теперь создаём метод и прописываем логику<p>
-<h2>using ApiTutorial.WebApi.Data;
+<code>
+ using ApiTutorial.WebApi.Data;
 using ApiTutorial.WebApi.DTOS;
 using ApiTutorial.WebApi.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -251,11 +272,13 @@ namespace ApiTutorial.WebApi.Services
             return true; // Возвращаем булевское значение, т.к Task<bool>
         }
     }
-}</h2>
+}
+</code>
 
 <p>Чудесно! Теперь пропишем контроллер и насладимся нашей Api</p>
 <p>В папке Controllers создаём BookController</p>
-<h2>using Microsoft.AspNetCore.Mvc;
+<code>
+ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiTutorial.WebApi.Controllers
 {
@@ -264,10 +287,12 @@ namespace ApiTutorial.WebApi.Controllers
     public class BookController : ControllerBase // Наследуемся 
     {
     }
-}</h2>
+}
+</code>
 
 <p>Теперь передадим сюда наш сервис и вызовем его</p>
-<h2>using ApiTutorial.WebApi.DTOS;
+<code>
+ using ApiTutorial.WebApi.DTOS;
 using ApiTutorial.WebApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -283,7 +308,8 @@ namespace ApiTutorial.WebApi.Controllers
         public async Task<IActionResult> CreateBook(BookDTO bookDTO) =>
             Ok(await _bookService.CreateBookAsync(bookDTO));
     }
-}</h2>
+}
+</code>
 
 <p>Также нужно инициализировать наш сервис в Program.cs. Сразу после // Add services to the container прописываем:</p>
 <h2>builder.Services.AddScoped<BookService>();</h2>
