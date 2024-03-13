@@ -312,6 +312,6 @@ namespace ApiTutorial.WebApi.Controllers
 </code>
 
 <p>Также нужно инициализировать наш сервис в Program.cs. Сразу после // Add services to the container прописываем:</p>
-<h2>builder.Services.AddScoped<BookService>();</h2>
+<h2>builder.Services.AddScoped < BookService >();</h2>
 
 <p>Готово! Можете запускать проект и наслаждаться результатом..</p>
