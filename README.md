@@ -82,7 +82,7 @@ server=localhost;user=root;password=123456789;database=bookshop // строка 
 
 <p>Для начала устнановим все нужные Nuget пакеты.</p>
 
-<h2>Microsoft.EntityFrameworkCore
+<h2>Microsoft.EntityFrameworkCore<br/>
 Microsoft.EntityFrameworkCore.Design
 Npgsql.EntityFrameworkCore.PostgreSQL // для Postgre
 Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</h2>
