@@ -115,7 +115,8 @@ Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</code>
 }</code>
 
 <h1>Book</h1>
-<code>using System.Text.Json.Serialization;
+<code>
+ using System.Text.Json.Serialization;
 
 namespace ApiTutorial.WebApi.Entities
 {
@@ -136,7 +137,8 @@ namespace ApiTutorial.WebApi.Entities
 <p>В папке Data создаём файл ApplicationDbContext. В нём мы наследуемся от DbContext и объявляем наши Сущности</p>
 <p>После объявления сущностей раскрываем конструктор, в который передаём настройки контекста и наследуемся от базового класса</p>
 <p>В конечном итоге файл должен выглядеть так:</p>
-<code>using ApiTutorial.WebApi.Entities;
+<code>
+ using ApiTutorial.WebApi.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiTutorial.WebApi.Data
@@ -148,7 +150,8 @@ namespace ApiTutorial.WebApi.Data
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { } //
     }
-}</code>
+}
+</code>
 
 не забывай дышать
 
