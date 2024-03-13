@@ -73,8 +73,8 @@ dotnet new sln // создание решения
 
 <h1>Вы не выбрали Postgre?</h1>
 
-<h2>Server=SERVER_NAME;Database=bookshop;Trusted_Connection=true;Encrypt=false // строка для MS SQL
-server=localhost;user=root;password=123456789;database=bookshop // строка для MySQL</h2>
+<code>Server=SERVER_NAME;Database=bookshop;Trusted_Connection=true;Encrypt=false // строка для MS SQL
+server=localhost;user=root;password=123456789;database=bookshop // строка для MySQL</code>
 
 <p>Отлично, теперь нужно прикрутить базу данных к проекту!</p>
 
