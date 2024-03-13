@@ -17,10 +17,10 @@
 
 ## CONSOLE
 
-<h2>cd FOLDER_PATH // путь до вашей папки
+<code>cd FOLDER_PATH // путь до вашей папки
 dotnet new webapi // создание шаблона WebApi
 dotnet new sln // создание решения
-</h2>
+</code>
 
 <p>После этого в решении (VS/Rider) нужно будет прикрутить проект WebApi к решению. Как это сделать показано ниже: </p>
 
