@@ -17,10 +17,10 @@
 
 ## CONSOLE
 
-<code>cd FOLDER_PATH // путь до вашей папки
+<h2>cd FOLDER_PATH // путь до вашей папки
 dotnet new webapi // создание шаблона WebApi
 dotnet new sln // создание решения
-</code>
+</h2>
 
 <p>После этого в решении (VS/Rider) нужно будет прикрутить проект WebApi к решению. Как это сделать показано ниже: </p>
 
@@ -63,18 +63,18 @@ dotnet new sln // создание решения
 
 <p>Бежим в appsettings.json и добавляем строку подключения!</p>
 
-<code>"ConnectionStrings" : { "NAME": "your_connection_string" },</code>
+<h2>"ConnectionStrings" : { "NAME": "your_connection_string" },</h2>
 
 <p>Если вы выбрали Postgres, то ваша строка будет выглядеть как-то так:</p>
 
-<code>Host=localhost;Port=5432;Database=bookshop;Username=postgres;Password=root</code>
+<h2>Host=localhost;Port=5432;Database=bookshop;Username=postgres;Password=root</h2>
 
 > Замените поля Database, Username, Password на нужные вам поля.
 
 <h1>Вы не выбрали Postgre?</h1>
 
-<code>Server=SERVER_NAME;Database=bookshop;Trusted_Connection=true;Encrypt=false // строка для MS SQL
-server=localhost;user=root;password=123456789;database=bookshop // строка для MySQL</code>
+<h2>Server=SERVER_NAME;Database=bookshop;Trusted_Connection=true;Encrypt=false // строка для MS SQL
+server=localhost;user=root;password=123456789;database=bookshop // строка для MySQL</h2>
 
 <p>Отлично, теперь нужно прикрутить базу данных к проекту!</p>
 
@@ -82,10 +82,10 @@ server=localhost;user=root;password=123456789;database=bookshop // строка 
 
 <p>Для начала устнановим все нужные Nuget пакеты.</p>
 
-<code>Microsoft.EntityFrameworkCore
+<h2>Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.Design
 Npgsql.EntityFrameworkCore.PostgreSQL // для Postgre
-Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</code>
+Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</h2>
 
 > Помните, что версию пакета надо устанавливать для версии своего проекта (7 - 7.0.17/8 - 8.0.3)
 
@@ -103,7 +103,7 @@ Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</code>
 <p>Создаём в папке Entities два файла: Author, Book</p>
 
 <h1>Author</h1>
-<code>namespace ApiTutorial.WebApi.Entities
+<h2>namespace ApiTutorial.WebApi.Entities
 {
     public class Author
     {
@@ -112,10 +112,10 @@ Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</code>
         public string? Lastname { get; set; } // Фамилия
         public string? Surname { get; set; } // Отчество
     }
-}</code>
+}</h2>
 
 <h1>Book</h1>
-<code>using System.Text.Json.Serialization;
+<h2>using System.Text.Json.Serialization;
 
 namespace ApiTutorial.WebApi.Entities
 {
@@ -129,14 +129,14 @@ namespace ApiTutorial.WebApi.Entities
         public Author? Author { get; set; }
     }
 }
-</code>
+</h2>
 
 <h1>ЧУДЕСНО!</h1>
 
 <p>В папке Data создаём файл ApplicationDbContext. В нём мы наследуемся от DbContext и объявляем наши Сущности</p>
 <p>После объявления сущностей раскрываем конструктор, в который передаём настройки контекста и наследуемся от базового класса</p>
 <p>В конечном итоге файл должен выглядеть так:</p>
-<code>using ApiTutorial.WebApi.Entities;
+<h2>using ApiTutorial.WebApi.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiTutorial.WebApi.Data
@@ -148,7 +148,7 @@ namespace ApiTutorial.WebApi.Data
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { } //
     }
-}</code>
+}</h2>
 
 не забывай дышать
 
@@ -157,7 +157,7 @@ namespace ApiTutorial.WebApi.Data
 <h1>Бежим в Program.cs</h1>
 <p>В нём нам нужно добавить контекст базы данных и строку подключения.</p>
 <p>Сразу после var builder = WebApplication.CreateBuilder(args); пишем: </p>
-<code>builder.Services.AddDbContext<ApplicationDbContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));</code>
+<h2>builder.Services.AddDbContext<ApplicationDbContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));</h2>
 
 > Замените UseNpgsql на своего провайдера БД (MS SQL - UseSqlServer; MySql - UseMySQL)
 
@@ -166,9 +166,9 @@ namespace ApiTutorial.WebApi.Data
 
 
 
-<code>add-migration
+<h2>add-migration
 MIGRATION_NAME
-update-database</code>
+update-database</h2>
 
 <p>Заходим в средство просмотра и любуемся.. Всё получилось? Великолепно!</p>
 
@@ -177,7 +177,7 @@ update-database</code>
 <p>Давайте напишем простенький метод, который будет принимать книгу и её автора, а поссле добавлять это всё в нашу базу данных</p>
 
 <p>В папке DTOS создаём файл BookDTO</p>
-<code>namespace ApiTutorial.WebApi.DTOS
+<h2>namespace ApiTutorial.WebApi.DTOS
 {
     public class BookDTO
     {
@@ -186,10 +186,10 @@ update-database</code>
         public string? AuthorSurname { get; set; } // Отчество автора
         public string? BookName { get; set; } // Название книги
     }
-}</code>
+}</h2>
 
 <p>В папке Services создаём файл BookService, в котором раскрываем конструктор и передаём в него наш контекст базы данных</p>
-<code>using ApiTutorial.WebApi.Data;
+<h2>using ApiTutorial.WebApi.Data;
 
 namespace ApiTutorial.WebApi.Services
 {
@@ -198,10 +198,10 @@ namespace ApiTutorial.WebApi.Services
         private readonly ApplicationDbContext _context = context;
     }
 }
-</code>
+</h2>
 
 <p>Теперь создаём метод и прописываем логику<p>
-<code>using ApiTutorial.WebApi.Data;
+<h2>using ApiTutorial.WebApi.Data;
 using ApiTutorial.WebApi.DTOS;
 using ApiTutorial.WebApi.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -251,11 +251,11 @@ namespace ApiTutorial.WebApi.Services
             return true; // Возвращаем булевское значение, т.к Task<bool>
         }
     }
-}</code>
+}</h2>
 
 <p>Чудесно! Теперь пропишем контроллер и насладимся нашей Api</p>
 <p>В папке Controllers создаём BookController</p>
-<code>using Microsoft.AspNetCore.Mvc;
+<h2>using Microsoft.AspNetCore.Mvc;
 
 namespace ApiTutorial.WebApi.Controllers
 {
@@ -264,10 +264,10 @@ namespace ApiTutorial.WebApi.Controllers
     public class BookController : ControllerBase // Наследуемся 
     {
     }
-}</code>
+}</h2>
 
 <p>Теперь передадим сюда наш сервис и вызовем его</p>
-<code>using ApiTutorial.WebApi.DTOS;
+<h2>using ApiTutorial.WebApi.DTOS;
 using ApiTutorial.WebApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -283,9 +283,9 @@ namespace ApiTutorial.WebApi.Controllers
         public async Task<IActionResult> CreateBook(BookDTO bookDTO) =>
             Ok(await _bookService.CreateBookAsync(bookDTO));
     }
-}</code>
+}</h2>
 
 <p>Также нужно инициализировать наш сервис в Program.cs. Сразу после // Add services to the container прописываем:</p>
-<code>builder.Services.AddScoped<BookService>();</code>
+<h2>builder.Services.AddScoped<BookService>();</h2>
 
 <p>Готово! Можете запускать проект и наслаждаться результатом..</p>
