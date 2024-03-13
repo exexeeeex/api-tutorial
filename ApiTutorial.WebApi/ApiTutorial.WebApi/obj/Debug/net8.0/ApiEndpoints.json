@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "ApiTutorial.WebApi.Controllers.BookController",
+    "Method": "CreateBook",
+    "RelativePath": "api/books/createbook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookDTO",
+        "Type": "ApiTutorial.WebApi.DTOS.BookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

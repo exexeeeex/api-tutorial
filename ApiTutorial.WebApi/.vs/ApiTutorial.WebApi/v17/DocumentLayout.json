@@ -1,12 +1,206 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Migrations\\20240313143235_bookshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApiTutorial.WebApi\\Migrations\\20240313143235_bookshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|b:\\api-tutorial\\api-tutorial\\apitutorial.webapi\\apitutorial.webapi\\apitutorial.webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{485B1764-CF52-4C6C-BB91-B245E8B7A9CF}|ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj|solutionrelative:apitutorial.webapi\\apitutorial.webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Controllers\\BookController.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Controllers\\BookController.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T15:28:51.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Services\\BookService.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Services\\BookService.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Services\\BookService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T15:18:57.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookDTO.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\DTOS\\BookDTO.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\DTOS\\BookDTO.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\DTOS\\BookDTO.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\DTOS\\BookDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T15:17:00.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240313143235_bookshop.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Migrations\\20240313143235_bookshop.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Migrations\\20240313143235_bookshop.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Migrations\\20240313143235_bookshop.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Migrations\\20240313143235_bookshop.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T14:32:36.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T14:23:28.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Entities\\Book.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Entities\\Book.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Entities\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T14:21:33.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Author.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Entities\\Author.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Entities\\Author.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Entities\\Author.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Entities\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T14:19:56.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Program.cs",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Program.cs",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:59:27.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\appsettings.json",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\appsettings.json",
+              "RelativeToolTip": "ApiTutorial.WebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-13T13:59:08.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\Properties\\launchSettings.json",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ApiTutorial.WebApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-13T13:57:32.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApiTutorial.WebApi",
+              "DocumentMoniker": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj",
+              "RelativeDocumentMoniker": "ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj",
+              "ToolTip": "B:\\api-tutorial\\api-tutorial\\ApiTutorial.WebApi\\ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj",
+              "RelativeToolTip": "ApiTutorial.WebApi\\ApiTutorial.WebApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T13:57:31.233Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
