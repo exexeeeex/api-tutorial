@@ -138,7 +138,7 @@ namespace ApiTutorial.WebApi.Entities
 <p>После объявления сущностей раскрываем конструктор, в который передаём настройки контекста и наследуемся от базового класса</p>
 <p>В конечном итоге файл должен выглядеть так:</p>
 <code>
- using ApiTutorial.WebApi.Entities;
+using ApiTutorial.WebApi.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiTutorial.WebApi.Data
@@ -204,7 +204,8 @@ namespace ApiTutorial.WebApi.Services
 </code>
 
 <p>Теперь создаём метод и прописываем логику<p>
-<code>using ApiTutorial.WebApi.Data;
+<code>
+using ApiTutorial.WebApi.Data;
 using ApiTutorial.WebApi.DTOS;
 using ApiTutorial.WebApi.Entities;
 using Microsoft.EntityFrameworkCore;
