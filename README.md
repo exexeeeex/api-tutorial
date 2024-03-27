@@ -94,7 +94,8 @@ server=localhost;user=root;password=123456789;database=bookshop // строка 
 <h2>Microsoft.EntityFrameworkCore<br/>
 Microsoft.EntityFrameworkCore.Design
 Npgsql.EntityFrameworkCore.PostgreSQL // для Postgre
-Microsoft.EntityFrameworkCore.SqlServer // для MS SQL</h2>
+Microsoft.EntityFrameworkCore.SqlServer // для MS SQL<br/>
+Microsoft.EntityFrameworkCore.Tools</h2>
 
 > Помните, что версию пакета надо устанавливать для версии своего проекта (7 - 7.0.17/8 - 8.0.3)
 
